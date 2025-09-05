@@ -1,0 +1,259 @@
+{
+  "agent_id": "agent_01jwgvwz63ezmapz1f5twrds1n",
+  "conversation_id": "conv_01jwkegevgf0x9qe26pjk2tkfe",
+  "status": "done",
+  "transcript": [
+    {
+      "role": "agent",
+      "message": "Hi there!",
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null
+    },
+    {
+      "role": "user",
+      "message": "Hello.",
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": "audio",
+      "time_in_call_secs": 2,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null
+    },
+    {
+      "role": "agent",
+      "message": "I've got a quick question: I have an Infinity Club pass and was hoping to use it. Are you guys affiliated with them?",
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": null,
+      "time_in_call_secs": 5,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.930204892065376
+          },
+          "convai_llm_service_ttfb": { "elapsed_time": 0.6744026890955865 }
+        }
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": {
+        "model_usage": {
+          "gpt-4o": {
+            "input": { "tokens": 64, "price": 0.00016 },
+            "input_cache_read": { "tokens": 1152, "price": 0.00144 },
+            "input_cache_write": { "tokens": 0, "price": 0.0 },
+            "output_total": { "tokens": 27, "price": 0.00027 }
+          }
+        }
+      },
+      "interrupted": false,
+      "original_message": null
+    },
+    {
+      "role": "user",
+      "message": "No.",
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": "audio",
+      "time_in_call_secs": 12,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null
+    },
+    {
+      "role": "agent",
+      "message": "Ah, that's a bit of a shame, I was really hoping to use my pass. I'll try another spot then. Cheers!",
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": null,
+      "time_in_call_secs": 14,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 1.0201315490994602
+          },
+          "convai_llm_service_ttfb": { "elapsed_time": 0.9164131840225309 }
+        }
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null
+    },
+    {
+      "role": "agent",
+      "message": null,
+      "tool_calls": [
+        {
+          "type": "system",
+          "request_id": "call_6MonRoavPu6cOYcCYyiLkcOK",
+          "tool_name": "end_call",
+          "params_as_json": "{\"reason\":\"The restaurant is not affiliated with Infinity Club, and the caller has expressed their disappointment and intention to try another spot.\",\"message\":\"Thank you for your time. Goodbye!\"}",
+          "tool_has_been_called": true,
+          "tool_details": null
+        }
+      ],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": null,
+      "time_in_call_secs": 14,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null
+    },
+    {
+      "role": "agent",
+      "message": null,
+      "tool_calls": [],
+      "tool_results": [
+        {
+          "type": "system",
+          "request_id": "call_6MonRoavPu6cOYcCYyiLkcOK",
+          "tool_name": "end_call",
+          "result_value": "{\"status\": \"success\", \"reason\": \"The restaurant is not affiliated with Infinity Club, and the caller has expressed their disappointment and intention to try another spot.\", \"message\": \"Thank you for your time. Goodbye!\"}",
+          "is_error": false,
+          "tool_has_been_called": true,
+          "tool_latency_secs": 0.5006439969874918
+        }
+      ],
+      "feedback": null,
+      "llm_override": null,
+      "source_medium": null,
+      "time_in_call_secs": 14,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": {
+        "model_usage": {
+          "gpt-4o": {
+            "input": { "tokens": 100, "price": 0.00025 },
+            "input_cache_read": { "tokens": 1152, "price": 0.00144 },
+            "input_cache_write": { "tokens": 0, "price": 0.0 },
+            "output_total": { "tokens": 73, "price": 0.00073 }
+          }
+        }
+      },
+      "interrupted": false,
+      "original_message": null
+    }
+  ],
+  "metadata": {
+    "start_time_unix_secs": 1748704446,
+    "accepted_time_unix_secs": 1748704447,
+    "call_duration_secs": 21,
+    "cost": 139,
+    "deletion_settings": {
+      "deletion_time_unix_secs": 1811776469,
+      "deleted_logs_at_time_unix_secs": null,
+      "deleted_audio_at_time_unix_secs": null,
+      "deleted_transcript_at_time_unix_secs": null,
+      "delete_transcript_and_pii": true,
+      "delete_audio": true
+    },
+    "feedback": { "overall_score": null, "likes": 0, "dislikes": 0 },
+    "authorization_method": "signed_url",
+    "charging": {
+      "dev_discount": false,
+      "tier": "creator",
+      "llm_usage": {
+        "irreversible_generation": {
+          "model_usage": {
+            "gpt-4o": {
+              "input": { "tokens": 164, "price": 0.00041 },
+              "input_cache_read": { "tokens": 2304, "price": 0.00288 },
+              "input_cache_write": { "tokens": 0, "price": 0.0 },
+              "output_total": { "tokens": 100, "price": 0.001 }
+            }
+          }
+        },
+        "initiated_generation": {
+          "model_usage": {
+            "gpt-4o": {
+              "input": { "tokens": 164, "price": 0.00041 },
+              "input_cache_read": { "tokens": 2304, "price": 0.00288 },
+              "input_cache_write": { "tokens": 0, "price": 0.0 },
+              "output_total": { "tokens": 100, "price": 0.001 }
+            }
+          }
+        }
+      },
+      "llm_price": 0.00429
+    },
+    "phone_call": {
+      "direction": "outbound",
+      "phone_number_id": "phnum_01jvqmsa8rfn297m97wt4v841c",
+      "agent_number": "+442382544190",
+      "external_number": "+447398090615",
+      "type": "twilio",
+      "stream_sid": "MZb51f734f7a6e84177054385611abf14d",
+      "call_sid": "CA5cdf14c96fae32085915939aebf2ba79"
+    },
+    "batch_call": null,
+    "termination_reason": "end_call tool was called.",
+    "error": null,
+    "main_language": "en",
+    "rag_usage": null,
+    "text_only": false
+  },
+  "analysis": {
+    "evaluation_criteria_results": {},
+    "data_collection_results": {
+      "isTheRestaurantPartneredWithInfinityClub": {
+        "data_collection_id": "isTheRestaurantPartneredWithInfinityClub",
+        "value": false,
+        "json_schema": {
+          "type": "boolean",
+          "description": "The main purpose of the entire call is to determine if the called restaurant is a part of, or collaborated, partnered or associated with infinity club, in any way, if yes this boolean should be true, if no, this boolean should be false",
+          "dynamic_variable": "",
+          "constant_value": ""
+        },
+        "rationale": "The user explicitly stated 'No' when asked if the restaurant is affiliated with Infinity Club. Therefore, the boolean value should be false."
+      }
+    },
+    "call_successful": "success",
+    "transcript_summary": "The agent inquired about using an Infinity Club pass at the restaurant. Upon learning they are not affiliated, the agent expressed disappointment and ended the call.\n"
+  },
+  "conversation_initiation_client_data": {
+    "conversation_config_override": {
+      "tts": null,
+      "conversation": null,
+      "agent": null
+    },
+    "custom_llm_extra_body": {},
+    "dynamic_variables": {
+      "system__agent_id": "agent_01jwgvwz63ezmapz1f5twrds1n",
+      "system__caller_id": "+442382544190",
+      "system__time_utc": "2025-05-31T15:14:27.633707+00:00",
+      "system__call_sid": "CA5cdf14c96fae32085915939aebf2ba79",
+      "system__called_number": "+447398090615",
+      "system__conversation_id": "conv_01jwkegevgf0x9qe26pjk2tkfe",
+      "system__call_duration_secs": 20
+    }
+  },
+  "has_audio": true,
+  "has_user_audio": true,
+  "has_response_audio": true
+}
