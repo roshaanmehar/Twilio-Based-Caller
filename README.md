@@ -1,4 +1,4 @@
-# 🤖 VEDA AI CALLER
+# 🤖 AI CALLER
 
 **Enterprise AI-Powered Calling & Email Campaign Management System**
 
@@ -44,15 +44,15 @@ ElevenLabs API Accounts (2 recommended)
 
 ### Installation
 \`\`\`bash
-cd "VEDA AI CALLER"
+cd "Caller V2"
 npm install
 npm start
 \`\`\`
 
 ### Docker Deployment
 \`\`\`bash
-docker build -t veda-ai-caller .
-docker run -p 8080:8080 veda-ai-caller
+docker build -t caller-v2 .
+docker run -p 8080:8080 caller-v2
 \`\`\`
 
 ---
@@ -73,7 +73,7 @@ ELEVEN_LABS_AGENT_ID_2=your_agent_id_2
 ELEVEN_LABS_PHONE_NUMBER_ID_2=your_phone_id_2
 
 # Database & Integrations
-MONGODB_CONNECTION_STRING=mongodb://localhost:27017/veda
+MONGODB_CONNECTION_STRING=mongodb://localhost:27017/caller
 ZAPIER_EMAIL_WEBHOOK_URL=https://hooks.zapier.com/your-webhook
 GEMINI_API_KEY=your_gemini_api_key
 
