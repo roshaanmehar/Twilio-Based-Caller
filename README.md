@@ -73,7 +73,7 @@ ELEVEN_LABS_AGENT_ID_2=your_agent_id_2
 ELEVEN_LABS_PHONE_NUMBER_ID_2=your_phone_id_2
 
 # Database & Integrations
-MONGODB_CONNECTION_STRING=mongodb://localhost:27017/caller
+MONGODB_CONNECTION_STRING=mongodb://localhost:27017/caller-v2
 ZAPIER_EMAIL_WEBHOOK_URL=https://hooks.zapier.com/your-webhook
 GEMINI_API_KEY=your_gemini_api_key
 
@@ -99,13 +99,16 @@ SCHEDULER_POLL_INTERVAL=60000
 #### Create Call Campaign
 \`\`\`http
 POST /api/v1/campaigns/calls
+Content-Type: application/json
 \`\`\`
+
+**Request Body:**
 \`\`\`json
 {
   "records": [
     {
       "id": "record_123",
-      "name": "John Doe",
+      "name": "John Doe", 
       "phone": "+44123456789"
     }
   ],
@@ -124,6 +127,7 @@ POST /api/v1/campaigns/calls
 #### Create Email Campaign
 \`\`\`http
 POST /api/v1/campaigns/emails
+Content-Type: application/json
 \`\`\`
 
 #### Get Campaign Status
@@ -138,7 +142,7 @@ GET /api/v1/campaigns/status?userId=user_123&status=pending
 GET /api/v1/records/status?recordId=record_123&databaseName=db&collectionName=collection
 \`\`\`
 
-#### Check Campaign Eligibility
+#### Check Campaign Eligibility  
 \`\`\`http
 GET /api/v1/records/eligibility?recordId=record_123&databaseName=db&collectionName=collection
 \`\`\`
@@ -169,7 +173,7 @@ GET /api/v1/kanban/emails?userId=user_123
 \`\`\`
 services/
 ├── campaignCreationService.js    # Campaign creation & validation
-├── outreachService.js           # ElevenLabs & email execution
+├── outreachService.js           # ElevenLabs & email execution  
 ├── scheduledOutreachService.js  # Background scheduling engine
 ├── recordCopyService.js         # Database record management
 └── validationService.js         # Input validation & sanitization
@@ -183,10 +187,16 @@ MongoDB: outreach_tracking/
 \`\`\`
 
 ### Dual Agent System
-- **Agent 1**: Handles call attempts 1 & 3
-- **Agent 2**: Handles call attempts 2 & 4
+
+| Agent | Handles | Purpose |
+|-------|---------|---------|
+| **Agent 1** | Call attempts 1 & 3 | Primary agent with load balancing |
+| **Agent 2** | Call attempts 2 & 4 | Secondary agent with failover support |
+
+**Features:**
 - **Load Balancing**: Automatic distribution across ElevenLabs accounts
 - **Failover**: Graceful handling of agent unavailability
+- **Smart Routing**: Intelligent attempt distribution
 
 ---
 
